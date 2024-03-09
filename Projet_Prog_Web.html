@@ -1,0 +1,54 @@
+    <!DOCTYPE html>
+    <html>
+
+        <head>
+            <meta name="author" content="hussein El-leithy and Karim Ghobara">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width" initial-scale="1.0">       <!--Il est preferer d'utiliser GOOGLE CHROME comme navigateur-->
+            <title>Projet</title>
+            <link rel="stylesheet" type="text/css" href="./projet.css"/>
+        </head>
+
+
+        <body>
+            <h1>Mécanique Céleste (Ou Pas)</h1>
+            <div id="canvas-container">
+                <canvas id="affichage" width="800" height="600"></canvas>
+                    
+                <span><h3 id="controls"><div id="arrow">&#8593;</div><span id="texte_controles">Masquer les contrôles</span></h3></span>
+                        
+                    <div id="formulaire-skeleton">
+                        <h2 id="form_title">Particules</h2>
+                        <div >
+                            <p id="texte">
+                                <span id="texte-guide">Pour ajouter des particules, double-cliquer dans le canvas. La particule ajouté aura les propriété définis ci-dessous.</span>
+                            </p>
+
+                            <div id="range-container">
+                                <span><label id="range-label" class="label-range-colorpicker" for="range_Masse">Masse: </label></span>
+                                <input type="range" name="Masse"  class="slider" id="in_range" min="1" max="500" value="250">
+                                <span  id="slider_value"></span> 
+                            </div>
+                            
+                            <div id="colorpicker-container">
+                                <label class="label-range-colorpicker" for="colorpicker">Couleur:</label>
+                                <input type="color" class="colorpicker" value="#0000ff">
+                            </div>
+                        </div>
+                    </div>
+
+                <div id="boutons">
+                    <button class="demarrer_stop" id="demarrer" style="vertical-align:middle"><span>Demarrer </span></button>
+                    <button class="demarrer_stop" id="stop" style="vertical-align:middle"><span>Stop </span></button>
+                </div>
+            </div>
+
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="./projet.js"></script>
+            </div>
+       </body>
+
+        <footer>PROGRAMMATION WEB 2020/2021 (El-leithy_Hussein - Ghobara_Karim)</footer>
+    </html>
